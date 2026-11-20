@@ -28,6 +28,9 @@ export default function Kartya({ adat }: KartyaProps) {
                     {adat.ar}
                 </p>
             </div>
+            <div>
+                <button onClick={()=> {}}> + </button>
+            </div>
         </article>
   )
 }
