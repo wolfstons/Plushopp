@@ -1,4 +1,5 @@
 import type { plussType } from "../types/plussType";
+import { getCardImage } from "../utils/getCardImage";
 
 interface KartyaProps {
   adat: plussType;
@@ -22,7 +23,7 @@ export default function Kartya({ adat }: KartyaProps) {
         <p>
             {adat.szuletes_nap.toLocaleDateString('hu-HU')}
         </p>
-        <p>
+        <p className="ar">
             {adat.ar}
         </p>
     </div>
