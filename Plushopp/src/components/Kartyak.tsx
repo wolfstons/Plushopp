@@ -1,5 +1,5 @@
 import { usePlussContext } from "../contexts/PlussContext"
-import {Kartya} from "./Kartya"
+import Kartya from "./Kartya"
 
 export default function Kartyak(){
 
@@ -13,7 +13,9 @@ export default function Kartyak(){
   
   if(error){
     <p>
-        {error}
+        return(
+            {error}
+        )
     </p>
   }
 
@@ -21,9 +23,9 @@ export default function Kartyak(){
         <div>
             {plussList.map((adat) => {
                 return(
-                    <Kartya 
+                    <Kartya
                         adat= {adat}
-                        key= {adat}
+                        key= {adat.id}
                     />
                 )
             })}
