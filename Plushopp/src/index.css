@@ -10,12 +10,21 @@
   --szoveg-piros: #e41214; /* Gombok, "+" jelvények élénkebb pirosa */
 }
 
+@font-face {
+  font-family: "Focim";
+  src: url("./assets/fonts/The-Barchella-Exfont2800.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   background-color: var(--hatter-vilagosbarna);
   color: var(--szoveg);
+  letter-spacing: 0.08em;
 }
 
 h1,
 h2 {
   color: var(--szoveg-piros);
+  font-family: "Focim", serif;
 }
